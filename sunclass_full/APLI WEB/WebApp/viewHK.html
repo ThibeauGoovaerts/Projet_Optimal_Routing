@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Section Menage</title>
+    <link rel="stylesheet" href="css/femmeMenage.css" type="text/css">
+</head>
+<body>
+<meta http-equiv="refresh" content="300" >
+    <div id="findings">
+        <div id="mapPark" class="mapPark">
+            <img src="plan.png" class="planPark" id="planPark" usemap="#map">
+            <map name="map" id="map">
+                
+            </map>
+        </div>
+    </div>
+    <div id="info">
+        <table style="width:100%" id=numbersTable>
+            <tr>
+              <th class="acceuils">Acceuils</th>
+              <th class="cautions">Cautions</th>
+              <th class="controles">Controle</th>
+            </tr>
+            <tr>
+                <th id="acceuils" class="acceuils">0</th>
+                <th id="cautions" class="cautions">0</th>
+                <th id="controles" class="controles">0</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th id="namePerson"></th>
+                <th></th>
+              </tr>
+          </table>
+
+    </div>
+    <div id="clickableButtons">
+        <div id="OwnBuilding" class="buttonToClick">Batiments à nous</div>
+        <div id="interims" class="buttonToClick">Interims</div>
+        <div id="overlays" class="buttonToClick">Liste</div>
+    </div>
+    <script defer src="jsPages/femmeMenage.js" type="text/javascript"></script>
+</body>
+</html>

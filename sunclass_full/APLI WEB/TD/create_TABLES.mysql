@@ -1,0 +1,51 @@
+DROP TABLE IF EXISTS Depanage;
+
+
+create table Depanage (
+	Id int AUTO_INCREMENT PRIMARY key,
+    DateMake DATETIME not null,
+    IdMake int not null,
+    Description text not null,
+    XCoordinate int not null,
+    YCoordinate int not null,
+    CodeUrgence int not null,
+    TimeStart DATETIME,
+    IdTaken int not null,
+    IdDone int not null,
+    TimeStop DATETIME,
+    Material text,
+    Skip boolean default 0,
+    Remarque text,
+    TimeTaken int,
+    IdBungalow int,
+    foreign key (IdMake) references Personel(Id),
+    foreign key (IdTaken) references Personel(Id),
+    foreign key (IdDone) references Personel(Id),
+    foreign key (IdBungalow) references bungalow(Id)
+) ENGINE=InnoDB ;
+
+ALTER TABLE Depanage AUTO_INCREMENT = 1;
+
+create table Taches (
+	Id int AUTO_INCREMENT PRIMARY key,
+    Beschrijving varchar(150) not null,
+    lundi boolean default 0,
+    mardi boolean default 0,
+    mercredi boolean default 0,
+    jeudi boolean default 0,
+    vendredi boolean default 0,
+    samedi boolean default 0,
+    dimanche boolean default 0
+) ENGINE=InnoDB ;
+
+create table Journaliere (
+	Id int AUTO_INCREMENT PRIMARY key,
+    IdTache int not null,
+    IdPersonel int,
+    Done boolean DEFAULT 0,
+    Skip boolean DEFAULT 0,
+    DatePlanned DATE not null,
+    DateExecuted DATETIME,
+    foreign key (IdTache) references Taches(Id),
+    foreign key (IdPersonel) references Personel(Id)
+) ENGINE=InnoDB ;

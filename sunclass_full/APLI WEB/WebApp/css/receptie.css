@@ -1,0 +1,475 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #021a40;
+	color: grey;
+	text-align: center;
+}
+
+.selectItem{
+	width: 50%;
+	border: 1px grey solid;
+	height: 50px;
+	background-color: #021a40;
+	color: grey;
+	font-size: 24px;
+}
+
+.selectItem:hover{
+	background-color: green;
+	color: black;
+	cursor: pointer;
+}
+
+.clicked{
+	background-color: green;
+	color: black;
+}
+
+#tableCautions tr th{
+	border: 1px grey solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+}
+
+#commentsTable tr th{
+	border: 1px grey solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.Confirm{
+	cursor: pointer;
+}
+
+.Confirm:hover{
+	color: white;
+	background-color: green;
+	font-weight: bold;
+}
+
+.selectInter{
+	background-color: #021a40;
+	border: none;
+	padding: 0 2em 0 0;
+	margin: 0px 25px 15px 25px;
+	color: grey;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	font-size: 30px;
+	line-height: inherit;
+}
+
+#confirmInterimChange{
+	font-size: 30px;
+	border: 2px grey solid;
+	width: 20%;
+	margin: auto;
+	cursor: pointer;
+}
+#confirmInterimChange:hover{
+	background-color: green;
+	color: white;
+}
+
+#inputfield{
+	width: 100%;
+	margin: auto;
+	color: #fff;
+}
+
+#mapPark {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:38%;
+	margin: 1% 1.5% 0 1.5%;
+	float: left;
+	flex-wrap: wrap;
+}
+
+#mapPark img {
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+}
+
+#mapPark img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+.actionAll{
+	background-color: red;
+	cursor: pointer;
+}
+
+#findingsElements{
+	background-color: lightblue;
+	width: 50%;
+	height: 650px;
+	border: black solid 5px;
+	float: right;
+	margin: 1%;
+}
+
+#findingsElements p{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.ExplainTable tr th{
+	border: 1px black solid;
+	color: black;
+	padding: 10px;
+}
+
+.ExplainTable{
+	margin: auto;
+}
+
+.done{
+	background-color: green;
+}
+
+.notDone{
+	background-color: red;
+}
+
+#description{
+	width: 75%;
+	height: 25px;
+	font-size: 20px;
+}
+
+#TDAjout{
+	font-size: 25px;
+	margin: auto;
+}
+
+#cars{
+	margin: 15px;
+}
+
+#selectUrgence{
+	border: none;
+	padding: 0 2em 0 0;
+	margin: 0px 25px 15px 25px;
+	color: grey;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	font-size: 30px;
+	line-height: inherit;
+	background-color: lightblue;
+}
+
+#confirmAjout{
+	background-color: lightblue;
+	border: solid 2px #021a40;
+	border-radius: 25px;
+	width: 150px;
+	font-size: 25px;
+	color: #021a40;
+	margin: 20px;
+}
+
+#confirmAjout:hover{
+	background-color: green;
+	cursor: pointer;
+}
+
+#urgent{
+	background-color: orange;
+}
+
+#normal{
+	background-color: lightblue;
+}
+
+#purgent{
+	background-color: greenyellow;
+}
+
+#closeExplainButton{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: red;
+	border-radius: 10px;
+}
+
+#info{
+	color: white;
+	font-size: 36px;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caution{
+	background-color: orange;
+	cursor: pointer;
+}
+
+.controle{
+	background-color: green;
+	cursor: pointer;
+}
+
+.acceuil{
+	background-color: red;
+	cursor: pointer;
+}
+
+.cautions{
+	color: orange;
+}
+
+.controles{
+	color: green;
+}
+
+.acceuils{
+	color: red;
+}
+
+#namePerson{
+	padding: 20px;
+	color: lightblue;
+}
+
+#commentBox{
+	position: absolute;
+	width: 750px;
+	background-color: #021a40;
+	left: -1px;
+	top: -1px;
+	opacity: 0.9;
+	color: white;
+	font-size: 24px;
+	border-radius: 25px;
+	padding-bottom: 30px;
+}
+
+#OwnBuildingTable{
+	margin: 15px;
+}
+
+#OwnBuildingTable tr th{
+	border: 1px white solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.action{
+	background-color: grey;
+}
+
+.actionRed{
+	background-color: red;
+	cursor: pointer;
+}
+
+#numbersTable *{
+	border: 1px grey solid;
+	padding: 4px;
+	font-size: 12px;
+}
+
+#numbersTable .action{
+	border: 1px white solid;
+	padding: 4px;
+}
+
+#numbersTable .reloueyes{
+	border: 1px white solid;
+	padding: 4px;
+	background-color: green;
+}
+#numbersTable .relouenon{
+	border: 1px white solid;
+	padding: 4px;
+	background-color: red;
+}
+
+#numbersTable .number{
+	border: 1px white solid;
+	padding: 4px;
+}
+
+#commentBox table, th, td {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+#formCaution{
+	margin-left: 20px;
+	font-size: 30px;
+}
+input[type='checkbox']{
+	width: 25px;
+	height: 25px;
+}
+input[type="text"]{
+	width: 75%;
+	height: 200px;
+	font-size: 42px;
+}
+#interimsearcher{
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 50%;
+	height: 50px;
+	font-size: 42px;
+}
+input[type="file"]{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+}
+#confirmCaution{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#confirmsearchinterim{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 35%;
+	height: 55px;
+	font-size: 42px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#confirmAcceuil{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#confirmControle{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#Interim1{
+	background-color: green;
+}
+
+#Interim0{
+	background-color: rgb(235, 60, 60);
+}
+
+#skipControle{
+	width: 35%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 150px;
+}
+
+#skipNettoyage{
+	width: 35%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 150px;
+}
+
+#confirmBuilding{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+#formAcceuil{
+	margin-left: 20px;
+	font-size: 45px;
+}
+
+#formControle{
+	margin-left: 20px;
+	font-size: 45px;
+}
+
+#clickableButtons{
+	width: 50%;
+	float: right;
+	margin-top: 200px;
+}
+
+#ownBuilding{
+	position: absolute;
+	left: 1px;
+	bottom: 1px;
+	background-color: #021a40;
+	opacity: 0.9;
+	color: white;
+	font-size: 24px;
+	border-radius: 10px;
+	padding-right: 25px;
+}
+
+button{
+	background-color: lightblue;
+	border-radius: 25px;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+
+.buttonToClick{
+	width: 70%;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: lightblue;
+	border-radius: 25px;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+
+.attributedTDGeneral{
+	background-color: darkorange;
+	cursor: pointer;
+}
+
+.openTDGeneral{
+	background-color: darkgreen;
+	cursor: pointer;
+}
+
+#headerTable{
+	font-size: 30px;
+}

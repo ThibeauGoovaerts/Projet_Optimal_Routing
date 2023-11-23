@@ -1,0 +1,578 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #021a40;
+    color: grey;
+    text-align: center;
+    width: 1170px;
+}
+
+h1{
+	font-size: 50px;
+}
+
+h5{
+	border-top: 3px black solid;
+	border-radius: 20px;
+	font-size: 36px;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+}
+
+#topButtons{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	background-color: #021a40;
+}
+
+#bottomButtons{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+	background-color: #021a40;
+}
+
+.selectItem{
+    margin: auto;
+    width: 45%;
+	border: 1px grey solid;
+	height: 65px;
+	margin: 5px;
+	background-color: #021a40;
+	color: grey;
+    font-weight: bold;
+	font-size: 30px;
+}
+
+#nrBungalow{
+	font-size: 30px;
+	width: 100px;
+	background-color: grey;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.acceptButtons{
+    margin: auto;
+    width: 80%;
+	border: 1px grey solid;
+	height: 50px;
+	margin-top: 20px;
+	background-color: #021a40;
+	color: grey;
+    font-weight: bold;
+	font-size: 30px;
+}
+
+#accept{
+	background-color: greenyellow;
+	color: black;
+}
+
+.acceptJourn{
+	width: 80%;
+	background-color: green;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 10%;
+}
+
+.skipButton{
+	width: 20%;
+	margin: 20px;
+	background-color: darkred;
+	color: white;
+}
+
+.demandeAide{
+	width: 20%;
+	margin: 20px;
+	background-color: yellow;
+	color: black;
+}
+
+#confirmAide{
+	background-color: yellow;
+	color: black;
+	height: 100px;
+	margin: 20px;
+}
+
+.skipButtonJourn{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 175px;
+	height: 40px;
+	background-color: red;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.ajoutRemarque{
+	margin-bottom: 100px;
+	width: 75%;
+}
+
+.remarque{
+	height: 100px;
+	width: 75%;
+	font-size: 48px;
+}
+
+.pauseButton{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 200px;
+	height: 65px;
+	background-color: orange;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.continuerButton{
+	width: 20%;
+	margin: 20px;
+	background-color: darkgreen;
+	color: white;
+}
+
+.remetreButton{
+	width: 20%;
+	margin: 20px;
+	background-color: purple;
+	color: white;
+}
+
+.planifierPlusTard{
+	width: 20%;
+	margin: 20px;
+	background-color: deepskyblue;
+	color: white;
+}
+
+.doneButton{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 200px;
+	height: 65px;
+	background-color: greenyellow;
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.doneButtonJourn{
+	width: 75%;
+	height: 65px;
+	background-color: greenyellow;
+	color: black;
+	font-size: 38px;
+	font-weight: bold;
+	margin-left: 12.5%;
+}
+
+#whiteboard{
+    margin-top: 175px;
+    margin-bottom: 30px;
+}
+
+#mapPark {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y:scroll;
+	overflow-x: hidden;
+	width: 1170px;
+	flex-wrap: wrap;
+    border: 2px black solid;
+}
+
+#mapPark img {
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+}
+
+#mapPark img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+.purgent{
+	background-color: green;
+	cursor: pointer;
+}
+
+.normal{
+    background-color: blue;
+	cursor: pointer;
+}
+
+.urgent{
+    background-color: orange;
+	cursor: pointer;
+}
+
+.attributed{
+    background-color: black;
+	cursor: pointer;
+}
+
+#commentBox{
+	position: absolute;
+	width: 750px;
+	background-color: #021a40;
+	left: -1px;
+	top: -1px;
+	opacity: 0.9;
+	color: white;
+	font-size: 24px;
+	border-radius: 25px;
+	padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#closeExplainButton{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: red;
+	border-radius: 10px;
+}
+
+.containerAccepted{
+	border: 2px grey solid;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.remarquesProduit{
+	font-size: 32px;
+	text-align: left;
+	margin: 0px 80px 20px 80px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#tableAFaire{
+	margin: auto;
+}
+
+#tableAFairePast{
+	margin: auto;
+}
+
+.action{
+	background-color: orange;
+}
+
+.actionDepannage{
+	background-color: green;
+}
+
+.actionAll{
+	background-color: red;
+}
+
+.actionAgenda{
+	background-color: orange;
+	font-size: 30px;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 50px;
+}
+
+#findingsElements{
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	bottom: 150px;
+	height: 100%;
+	width: 100%;
+	background-color: #021a40;
+	font-size: 40px;
+}
+
+#findingsElements input[type="textarea"]{
+	width: 75%;
+	height: 150px;
+	font-size: 40px;
+	margin: 15px;
+}
+
+#findingsElements input[type="time"]{
+	font-size: 40px;
+	margin: 15px;
+}
+
+#confirmAjout{
+	width: 40%;
+	height: 50px;
+	background-color: greenyellow;
+	font-size: 30px;
+	margin: 20px;
+}
+
+#tableAFaire .actionDo{
+	border: 1px white solid;
+	font-size: 32px;
+	padding: 10px;
+}
+
+#tableAFairePast .actionDo{
+	border: 1px white solid;
+	font-size: 32px;
+	padding: 10px;
+}
+
+.journaliereItem{
+	border: 2px grey solid;
+	border-radius: 20px;
+	position: relative;
+	margin-bottom: 100px;
+	text-align: left;
+	padding-left: 20px;
+}
+.journaliereItem p{
+	font-size: 26px;
+}
+
+.journaliereItem h3{
+	font-size: 35px;
+	margin-top: 10px;
+	margin-bottom:0;
+}
+
+.journaliereItem h1{
+	text-align: center;
+	font-weight: bold;
+	margin-top: 18px;
+}
+
+.remarqueJourn{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 75%;
+	margin-left: 12.5%;
+	height: 200px;
+	font-size: 40px;
+	background-color: #021a40;
+	border: white 1.5px solid;
+	color: lightgrey;
+}
+
+#overlayDepannage{
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	background-color: grey;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#overlayPast{
+	position: absolute;
+	top: 300px;
+	right: 100px;
+	background-color: grey;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#overlayDepannage input[type="time"]{
+	font-size: 32px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#finalDoneButton{
+	background-color: greenyellow;
+	color: black;
+	width: 200px;
+}
+
+.switch-holder {
+	display: flex;
+	padding: 10px 20px;
+	border-radius: 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.switch-label {
+	width: 150px;
+}
+
+.switch-label i {
+	margin-right: 5px;
+}
+
+.switch-toggle {
+	height: 40px;
+}
+
+.switch-toggleAgenda{
+	height: 40px;
+}
+
+.switch-toggle input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	z-index: -2;
+}
+
+.switch-toggleAgenda input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	z-index: -2;
+}
+
+#dateInput{
+	width: 50%;
+	font-size: 30px;
+}
+
+#dateToPlan{
+	font-size: 30px;
+}
+
+#selectUrgence{
+	width: 50%;
+	font-size: 30px;
+}
+
+.switch-toggle input[type="checkbox"] + label {
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 0;
+	cursor: pointer;
+	box-shadow: inset -8px -8px 15px rgba(255,255,255,.6),
+	inset 10px 10px 10px rgba(0,0,0, .25);
+
+}
+
+.switch-toggleAgenda input[type="checkbox"] + label {
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 0;
+	cursor: pointer;
+	box-shadow: inset -8px -8px 15px rgba(255,255,255,.6),
+	inset 10px 10px 10px rgba(0,0,0, .25);
+}
+
+.switch-toggle input[type="checkbox"] + label::before {
+	position: absolute;
+	content: 'DEPANNAGE';
+	font-size: 24px;
+	text-align: center;
+	line-height: 25px;
+	font-weight: bold;
+	top: 8px;
+	left: 8px;
+	width: 250px;
+	height: 30px;
+	color: black;
+	border-radius: 20px;
+	background-color: #00b33c;
+	box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+	3px 3px 5px rgba(0,0,0, .25);
+	transition: .3s ease-in-out;
+}
+
+.switch-toggleAgenda input[type="checkbox"] + label::before {
+	position: absolute;
+	content: 'Accepte';
+	font-size: 24px;
+	text-align: center;
+	line-height: 25px;
+	font-weight: bold;
+	top: 8px;
+	left: 8px;
+	width: 250px;
+	height: 30px;
+	color: black;
+	border-radius: 20px;
+	background-color: #00b33c;
+	box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+	3px 3px 5px rgba(0,0,0, .25);
+	transition: .3s ease-in-out;
+}
+
+.switch-toggle input[type="checkbox"]:checked + label::before {
+	left: 50%;
+	content: 'GARDE';
+	color: black;
+	font-weight: bold;
+	background-color: orange;
+	box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+	3px 3px 5px #00b33c;
+}
+
+.switch-toggleAgenda input[type="checkbox"]:checked + label::before {
+	left: 50%;
+	content: 'Agenda';
+	color: black;
+	font-weight: bold;
+	background-color: antiquewhite;
+	box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+	3px 3px 5px #00b33c;
+}
+
+span{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.containerGardes{
+	border: 1px solid grey;
+	border-radius: 25px;
+	margin: 10%;
+	width: 80%;
+	text-align: left;
+	padding: 10px;
+	font-size: 40px;
+}
+
+.containerGardesModif{
+	border: 1px solid grey;
+	border-radius: 25px;
+	margin: 15px;
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+	font-size: 45px;
+}
+
+#descriptionAgenda{
+	width: 100%;
+	font-size: 40px;
+}
+
+#files{
+	font-size: 30px;
+	padding: 5px;
+	border-radius: 25px;
+}

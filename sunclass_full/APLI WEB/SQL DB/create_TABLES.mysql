@@ -1,0 +1,124 @@
+DROP TABLE IF EXISTS Photo;
+DROP TABLE IF EXISTS Schoonmaak;
+DROP TABLE IF EXISTS equipe;
+DROP TABLE IF EXISTS CheckCaution;
+DROP TABLE IF EXISTS waarborg;
+DROP TABLE IF EXISTS ControleApres;
+DROP TABLE IF EXISTS Acceuil;
+DROP TABLE IF EXISTS SchoonmaakEigen;
+DROP TABLE IF EXISTS LadiesInterims;
+
+
+create table equipe (
+	Id int auto_increment PRIMARY key,
+    Nom1 varchar(50) not null,
+    Prenom1 varchar(50) not null,
+    Nom2 varchar(50),
+    Prenom2 varchar(50),
+    NumeroEquipe int not null,
+    DateEquipe date
+) ENGINE=InnoDB;
+
+ALTER TABLE equipe AUTO_INCREMENT = 1;
+
+create table waarborg (
+	Id int auto_increment primary key,
+	Done boolean not null,
+	Linge boolean not null,
+	Vaiselle boolean not null,
+	Poubelle boolean not null,
+	Sale boolean not null,
+	Degats boolean not null,
+	Remarque text,
+	IdReception int default 0
+) ENGINE=InnoDB;
+
+ALTER TABLE waarborg AUTO_INCREMENT = 1;
+
+create table ControleApres(
+	Id int auto_increment primary key,
+	IdPersonel int not null,
+	DateControlApres date,
+	done boolean,
+	Remarque text,
+	foreign key (IdPersonel) references Personel(Id)
+) ENGINE=InnoDB;
+
+ALTER TABLE ControleApres AUTO_INCREMENT = 1;
+
+create table Acceuil (
+	Id int auto_increment primary key,
+	IdPersonel int not null,
+	DateAcceuil date,
+	done boolean,
+	Remarque text,
+	foreign key (IdPersonel) references Personel(Id)
+) ENGINE=InnoDB;
+
+ALTER TABLE Acceuil AUTO_INCREMENT = 1;
+
+create table CheckCaution (
+	Id int primary key auto_increment,
+	IdPersonel int not null,
+	DateAcceuil date,
+	done boolean,
+	IdWaarborg int not null,
+	foreign key (IdPersonel) references Personel(Id),
+	foreign key (IdWaarborg) references waarborg(Id)
+) engine=innodb;
+
+ALTER TABLE CheckCaution AUTO_INCREMENT = 1;
+
+create table Schoonmaak (
+	Id int not null auto_increment primary key,
+	Boekingsnummer int,
+	IdBungalow int not null,
+	DateMake date not null,
+	Reloue boolean not null,
+	Done boolean not null,
+	IdEquipe int,
+	IdControleApres int,
+	IdAcceuil int,
+	IdCheckCaution int,
+	RenvoieEquipe boolean default false,
+	Skip boolean default false,
+	Cleaned boolean default false,
+	foreign key (IdEquipe) references equipe(Id),
+	foreign key (IdControleApres) references ControleApres(Id),
+	foreign key (IdAcceuil) references Acceuil(Id),
+	foreign key (IdCheckCaution) references CheckCaution(Id),
+	foreign key (IdBungalow) references bungalow(Id)
+) engine=innodb;
+
+create table Photo (
+	Id int auto_increment not null primary key,
+	PhotoPath varchar(200),
+	DateMade date not null,
+	IdSchoonmaak int not null,
+	foreign key (IdSchoonmaak) references Schoonmaak(Id)
+) engine=innodb;
+
+ALTER TABLE Photo AUTO_INCREMENT = 1;
+
+create table SchoonmaakEigen(
+	Id int auto_increment primary key,
+	DateMade date not null,
+	IdPersonel int not null,
+	Done boolean not null,
+	IdBuilding int not null,
+	block int,
+	foreign key (IdPersonel) references Personel(Id),
+	foreign key (IdBuilding) references Building(Id)
+) engine=innodb;
+
+ALTER TABLE SchoonmaakEigen AUTO_INCREMENT = 1;
+
+create table LadiesInterims(
+	Id int auto_increment primary key,
+	DateMade date not null,
+	IdPersonel int not null,
+	AcceuilInterim boolean not null,
+	foreign key (IdPersonel) references Personel(Id)
+) engine=innodb;
+
+ALTER TABLE LadiesInterims AUTO_INCREMENT = 1;

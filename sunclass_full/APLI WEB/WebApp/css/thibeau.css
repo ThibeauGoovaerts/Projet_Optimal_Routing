@@ -1,0 +1,1026 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #021a40;
+    color: grey;
+    text-align: center;
+}
+
+.selectItem{
+	width: 24%;
+	border: 1px grey solid;
+	height: 50px;
+	background-color: #021a40;
+	color: grey;
+	font-size: 24px;
+}
+
+#descriptionPlanBigger{
+	font-size: 24px;
+	width: 90%;
+	height: 60px;
+}
+
+.descriptionAgenda{
+	width: 100%;
+	font-size: 20px;
+}
+
+.selectItem:hover{
+	background-color: green;
+	color: black;
+	cursor: pointer;
+}
+
+.clicked{
+	background-color: green;
+	color: black;
+}
+
+#tableCautions tr th{
+	border: 1px grey solid;
+	margin: 10px;
+	padding: 10px;
+}
+
+#commentsTable tr th{
+	border: 1px grey solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.Confirm{
+    cursor: pointer;
+}
+
+.Confirm:hover{
+    color: white;
+    background-color: green;
+    font-weight: bold;
+}
+
+.selectInter{
+	background-color: #021a40;
+	border: none;
+	padding: 0 2em 0 0;
+	margin: 0px 25px 15px 25px;
+	color: grey;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	font-size: 30px;
+	line-height: inherit;
+}
+
+#confirmInterimChange{
+	font-size: 30px;
+	border: 2px grey solid;
+	width: 20%;
+	margin: auto;
+	cursor: pointer;
+}
+#confirmInterimChange:hover{
+	background-color: green;
+	color: white;
+}
+
+#inputfield{
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+
+#inputfieldDateDep{
+	float: right;
+	width: 45%;
+	margin: auto;
+	color: #fff;
+}
+
+#inputfieldHours{
+	width: 100%;
+	margin: auto;
+	color: #fff;
+}
+
+#HoursInputAlignment{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+#mapPark {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*width:38%;*/
+    float: left;
+	flex-wrap: wrap;
+}
+
+#mapPark img {
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+}
+
+#mapPark img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+.actionAll{
+	background-color: red;
+	cursor: pointer;
+}
+
+.actionAllDone{
+	background-color: green;
+	cursor: pointer;
+}
+
+.actionAllHalfDone{
+	background-color: #949407;
+	cursor: pointer;
+}
+
+#findingsElements{
+    background-color: lightblue;
+    width: 50%;
+    border: black solid 5px;
+    float: right;
+    margin: 1%;
+}
+
+#findingsElements p{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.ExplainTable tr th{
+	border: 1px black solid;
+	color: black;
+	padding: 10px;
+}
+
+.ExplainTable{
+	margin: auto;
+}
+
+.done{
+    background-color: green;
+}
+
+.notDone{
+    background-color: red;
+}
+
+#description{
+	width: 75%;
+	height: 25px;
+	font-size: 20px;
+}
+
+#TDAjout{
+	font-size: 25px;
+	margin: auto;
+}
+
+#cars{
+	margin: 15px;
+}
+
+#selectUrgence{
+	border: none;
+	padding: 0 2em 0 0;
+	margin: 0px 25px 15px 25px;
+	color: grey;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	font-size: 30px;
+	line-height: inherit;
+	background-color: lightblue;
+}
+
+#confirmAjout{
+	background-color: lightblue;
+	border: solid 2px #021a40;
+	border-radius: 25px;
+	width: 150px;
+	font-size: 25px;
+	color: #021a40;
+	margin: 20px;
+}
+
+#confirmAjout:hover{
+	background-color: green;
+	cursor: pointer;
+}
+
+#urgent{
+	background-color: orange;
+}
+
+#normal{
+	background-color: lightblue;
+}
+
+#purgent{
+	background-color: greenyellow;
+}
+
+#closeExplainButton{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: red;
+	border-radius: 10px;
+}
+
+#info{
+	color: white;
+	font-size: 36px;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caution{
+	background-color: orange;
+	cursor: pointer;
+}
+
+.controle{
+	background-color: green;
+	cursor: pointer;
+}
+
+.acceuil{
+	background-color: red;
+	cursor: pointer;
+}
+
+.cautions{
+	color: orange;
+}
+
+.controles{
+	color: green;
+}
+
+.acceuils{
+	color: red;
+}
+
+#namePerson{
+	padding: 20px;
+	color: lightblue;
+}
+
+#commentBox{
+	position: absolute;
+	width: 750px;
+	background-color: #021a40;
+	left: -1px;
+	top: -1px;
+	opacity: 0.9;
+	color: white;
+	font-size: 24px;
+	border-radius: 25px;
+	padding-bottom: 30px;
+}
+
+#OwnBuildingTable{
+	margin: 15px;
+}
+
+#OwnBuildingTable tr th{
+	border: 1px white solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.action{
+	background-color: grey;
+}
+
+#numbersTable .action{
+	border: 1px white solid;
+	padding: 4px;
+}
+
+#numbersTable .reloueyes{
+	border: 1px white solid;
+	padding: 4px;
+	background-color: green;
+}
+#numbersTable .relouenon{
+	border: 1px white solid;
+	padding: 4px;
+	background-color: red;
+}
+
+#numbersTable .number{
+	border: 1px white solid;
+	padding: 4px;
+}
+
+#commentBox table, th, td {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+#formCaution{
+	margin-left: 20px;
+	font-size: 30px;
+}
+input[type='checkbox']{
+	width: 25px;
+	height: 25px;
+}
+input[type="text"]{
+	width: 75%;
+	height: 200px;
+	font-size: 42px;
+}
+#interimsearcher{
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 50%;
+	height: 50px;
+	font-size: 42px;
+}
+input[type="file"]{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+}
+#confirmCaution{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#confirmsearchinterim{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 35%;
+	height: 55px;
+	font-size: 42px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#confirmAcceuil{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#confirmControle{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#Interim1{
+	background-color: green;
+}
+
+#Interim0{
+	background-color: rgb(235, 60, 60);
+}
+
+#skipControle{
+	width: 35%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 150px;
+}
+
+#skipNettoyage{
+	width: 35%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 150px;
+}
+
+#confirmBuilding{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+#formAcceuil{
+	margin-left: 20px;
+	font-size: 45px;
+}
+
+#formControle{
+	margin-left: 20px;
+	font-size: 45px;
+}
+
+#clickableButtons{
+	width: 50%;
+	float: right;
+	margin-top: 200px;
+}
+
+#ownBuilding{
+	position: absolute;
+	left: 1px;
+	bottom: 1px;
+	background-color: #021a40;
+	opacity: 0.9;
+	color: white;
+	font-size: 24px;
+	border-radius: 10px;
+	padding-right: 25px;
+}
+
+button{
+	background-color: lightblue;
+	border-radius: 25px;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+
+.buttonToClick{
+	width: 70%;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: lightblue;
+	border-radius: 25px;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+
+.attributedTDGeneral{
+	background-color: black;
+	cursor: pointer;
+}
+
+.openTDGeneral{
+	background-color: greenyellow;
+	cursor: pointer;
+}
+
+.actionRed{
+	background-color: red;
+	cursor: pointer;
+}
+
+.containerGardes{
+	border: 1px solid grey;
+	border-radius: 25px;
+	margin: 15px;
+	width: 40%;
+	text-align: left;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.containerGardesModif{
+	border: 1px solid grey;
+	border-radius: 25px;
+	margin: 15px;
+	width: 75%;
+	text-align: left;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.tableGardes tr th{
+	border: 1px solid grey;
+	padding: 5px;
+	margin: 5px;
+	font-size: 27px;
+	font-weight: normal;
+}
+
+.titleJourn{
+	font-size: 42px;
+	border-bottom: 1px solid lightgrey;
+	margin: 30px;
+}
+
+.tachesJournaliere{
+	border: 1px dotted grey;
+	width: 55%;
+	padding: 10px;
+	margin: auto;
+	border-radius: 25px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.depannagesBoxDone{
+	border: 2px dotted green;
+	position: relative;
+	width: 60%;
+	margin: 15px auto;
+	border-radius: 25px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.depannagesBoxSkip{
+	border: 2px dotted red;
+	position: relative;
+	width: 60%;
+	margin: 15px auto;
+	border-radius: 25px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.depannagesBoxNot{
+	border: 2px dotted orange;
+	position: relative;
+	width: 60%;
+	margin: 15px auto;
+	border-radius: 25px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.depNrBunaglow{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.depDate{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.depDescription{
+	margin: auto;
+	margin-top: 75px;
+}
+
+.depDone{
+	background-color: green;
+	width: 200px;
+	height: 40px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.depSkip{
+	background-color: red;
+	width: 200px;
+	height: 40px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.depNotDone{
+	background-color: orange;
+	width: 200px;
+	height: 40px;
+	margin: 40px auto auto;
+}
+
+.remarqueInText{
+	font-size: 24px;
+}
+
+#extraWhiteBoardHourBlocks{
+	height: 70vh;
+	width: 90vw;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#extraWhiteBoardHourBlocks h3{
+	width: 10%;
+	border: 1px grey dashed;
+	height: 6.65%;
+	margin: 0;
+}
+
+.hourblock{
+	height: 6.65%;
+	width: 85%;
+	border: 1px grey dashed;
+	text-align: left;
+}
+
+.blockTacheJourn{
+	width: 50%;
+	background-color: red;
+	margin: auto;
+}
+
+.blockDepanage{
+	width: 50%;
+	background-color: green;
+	margin: auto;
+}
+
+#nameInput{
+	font-size: 14px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: deepskyblue;
+	color: white;
+	border-radius: 10px;
+	font-size: 36px;
+	border: none;
+	min-width: 200px;
+	height: 50px;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	left: 0;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	font-size: 30px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: deepskyblue;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: darkblue;}
+
+
+.pie {
+	-webkit-tap-highlight-color: transparent;
+	background: #000;
+	border-radius: 50%;
+	box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	height: 400px;
+	left: -200px;
+	position: fixed;
+	top: -200px;
+	width: 400px;
+	z-index: 9;
+	transform: translateX(-200px) translateY(-200px);
+	transition: transform 300ms;
+}
+.pie-color:hover {
+	opacity: 0.85;
+}
+.pie-color:active {
+	opacity: 0.7;
+}
+.pie1 {
+	clip-path: polygon(200px 200px, 344px 450px, 0 450px);
+	transition-delay: 30ms;
+}
+.pie2 {
+	clip-path: polygon(200px 200px, 344px 450px, 450px 344px);
+	transition-delay: 60ms;
+}
+.pie3 {
+	clip-path: polygon(200px 200px, 450px 0, 450px 344px);
+	transition-delay: 90ms;
+}
+.pie-color {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.pie-color1 {
+	background: linear-gradient(135deg, #f12711, #f5af19);
+	clip-path: polygon(200px 200px, 344px 450px, 0 450px);
+}
+.pie-color2 {
+	background: linear-gradient(135deg, #444, #7e84f9);
+	clip-path: polygon(200px 200px, 344px 450px, 450px 344px);
+}
+.pie-color3 {
+	background: linear-gradient(135deg, #444, #b7e13f);
+	clip-path: polygon(200px 200px, 450px 0, 450px 344px);
+}
+.worker {
+	left: 216px;
+	position: absolute;
+	top: 300px;
+	width: 46px;
+}
+.discount {
+	left: 288px;
+	position: absolute;
+	top: 258px;
+	width: 46px;
+}
+.cart {
+	left: 324px;
+	position: absolute;
+	top: 188px;
+	width: 46px;
+}
+.menuRoll {
+	-webkit-tap-highlight-color: transparent;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	height: 200px;
+	left: -100px;
+	position: fixed;
+	top: -100px;
+	width: 200px;
+	z-index: 10;
+}
+.hamburger {
+	cursor: pointer;
+	height: 46px;
+	left: 20%;
+	position: relative;
+	top: 58%;
+	width: 46px;
+	z-index: 10;
+}
+.title {
+	color: white;
+	font-family: "Crimson Text", serif;
+	font-size: 80px;
+	line-height: 84px;
+	margin-top: 60px;
+	text-align: center;
+}
+.hamburger path {
+	transition: transform 300ms;
+}
+.hamburger path:nth-child(1) {
+	transform-origin: 25% 29%;
+}
+.hamburger path:nth-child(2) {
+	transform-origin: 50% 50%;
+}
+.hamburger path:nth-child(3) {
+	transform-origin: 75% 72%;
+}
+.hamburger path:nth-child(4) {
+	transform-origin: 75% 29%;
+}
+.hamburger path:nth-child(5) {
+	transform-origin: 25% 72%;
+}
+.active .pie {
+	transform: translateX(0) translateY(0);
+}
+.active .hamburger path:nth-child(1) {
+	transform: rotate(45deg);
+}
+.active .hamburger path:nth-child(2) {
+	transform: scaleX(0);
+}
+.active .hamburger path:nth-child(3) {
+	transform: rotate(45deg);
+}
+.active .hamburger path:nth-child(4) {
+	transform: rotate(-45deg);
+}
+.active .hamburger path:nth-child(5) {
+	transform: rotate(-45deg);
+}
+
+.circular-menu {
+	position: fixed;
+	top: 1em;
+	right: 1em;
+}
+
+.circular-menu .floating-btn {
+	display: block;
+	width: 3.5em;
+	height: 3.5em;
+	border-radius: 50%;
+	background-color: hsl(4, 98%, 60%);
+	box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);
+	color: hsl(0, 0%, 100%);
+	text-align: center;
+	line-height: 3.9;
+	cursor: pointer;
+	outline: 0;
+}
+
+.circular-menu.active .floating-btn {
+	box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
+}
+
+.circular-menu .floating-btn:active {
+	box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
+}
+
+.circular-menu .floating-btn i {
+	font-size: 1.3em;
+	transition: transform .2s;
+}
+
+.circular-menu.active .floating-btn i {
+	transform: rotate(-45deg);
+}
+
+.circular-menu:after {
+	display: block;
+	content: ' ';
+	width: 3.5em;
+	height: 3.5em;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -2;
+	background-color: hsl(4, 98%, 60%);
+	transition: all .3s ease;
+}
+
+.circular-menu.active:after {
+	transform: scale3d(5.5, 5.5, 1);
+	transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+}
+
+.circular-menu .items-wrapper {
+	padding: 0;
+	margin: 0;
+}
+
+.circular-menu .menu-item {
+	position: absolute;
+	top: .2em;
+	right: .2em;
+	z-index: -1;
+	display: block;
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	font-size: 1em;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 3;
+	background-color: hsla(0,0%,0%,.1);
+	transition: transform .3s ease, background .2s ease;
+}
+
+.circular-menu .menu-item:hover {
+	background-color: hsla(0,0%,0%,.3);
+}
+
+.circular-menu.active .menu-item {
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.circular-menu.active .menu-item:nth-child(1) {
+	transform: translate3d(-7em,0em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(2) {
+	transform: translate3d(-5.7em,3.5em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(3) {
+	transform: translate3d(-3.5em,6.5em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(4) {
+	transform: translate3d(0em,7.3em,0);
+}
+
+/* Style the navigation bar */
+.navbar {
+	display: flex;
+	max-width: 50%;
+	overflow: auto;
+	margin: auto;
+	align-items: center;
+}
+
+/* Navbar links */
+.navbar a {
+	width: 15%;
+	float: left;
+	text-align: center;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#confirmButton{
+	margin: 5px;
+}
+
+select{
+	margin: 10px;
+	color: white;
+	background-color: #021a40;
+	width: 200px;
+	align: center;
+	height: 30px;
+	font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+	background-color: deepskyblue;
+}
+
+.quizQuestion{
+	border: 2px solid grey;
+	border-radius: 15px;
+	margin: 15px auto;
+	max-width: 80%;
+}
+
+.quizQuestion h1{
+	color: lightgrey;
+	text-align: left;
+	margin: 15px;
+}
+
+.quizQuestion h3{
+	cursor: pointer;
+	max-width: 30%;
+	margin: 15px;
+	font-size: 22px;
+	border-left: 1px dotted grey;
+	text-align: left;
+	padding: 10px;
+}
+
+.quizQuestion h3:hover{
+	color: black;
+	border-left: 1px dotted black;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+	}
+}

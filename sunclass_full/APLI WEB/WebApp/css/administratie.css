@@ -1,0 +1,622 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #021a40;
+	color: grey;
+	text-align: center;
+}
+
+.selectItem{
+	width: 24%;
+	border: 1px grey solid;
+	height: 50px;
+	background-color: #021a40;
+	color: grey;
+	font-size: 24px;
+}
+
+.selectItem:hover{
+	background-color: green;
+	color: black;
+	cursor: pointer;
+}
+
+.clicked{
+	background-color: green;
+	color: black;
+}
+
+#tableCautions tr th{
+	border: 1px grey solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+}
+
+#commentsTable tr th{
+	border: 1px grey solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.Confirm{
+	cursor: pointer;
+}
+
+.Confirm:hover{
+	color: white;
+	background-color: green;
+	font-weight: bold;
+}
+
+.selectInter{
+	background-color: #021a40;
+	border: none;
+	padding: 0 2em 0 0;
+	margin: 0px 25px 15px 25px;
+	color: grey;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	font-size: 30px;
+	line-height: inherit;
+}
+
+#confirmInterimChange{
+	font-size: 30px;
+	border: 2px grey solid;
+	width: 20%;
+	margin: auto;
+	cursor: pointer;
+}
+#confirmInterimChange:hover{
+	background-color: green;
+	color: white;
+}
+
+#inputfield{
+	width: 100%;
+	margin: auto;
+	color: #fff;
+}
+
+#inputfieldHours{
+	width: 100%;
+	margin: auto;
+	color: #fff;
+}
+
+#HoursInputAlignment{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+#mapPark {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:38%;
+	margin: 1% 1.5% 0 1.5%;
+	float: left;
+	flex-wrap: wrap;
+}
+
+#mapPark img {
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+}
+
+#mapPark img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+.actionAll{
+	background-color: red;
+	cursor: pointer;
+}
+
+#findingsElements{
+	background-color: lightblue;
+	width: 50%;
+	height: 650px;
+	border: black solid 5px;
+	float: right;
+	margin: 1%;
+}
+
+#findingsElements p{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.ExplainTable tr th{
+	border: 1px black solid;
+	color: black;
+	padding: 10px;
+}
+
+.ExplainTable{
+	margin: auto;
+}
+
+.done{
+	background-color: green;
+}
+
+.notDone{
+	background-color: red;
+}
+
+#description{
+	width: 75%;
+	height: 25px;
+	font-size: 20px;
+}
+
+#TDAjout{
+	font-size: 25px;
+	margin: auto;
+}
+
+#cars{
+	margin: 15px;
+}
+
+#selectUrgence{
+	border: none;
+	padding: 0 2em 0 0;
+	margin: 0px 25px 15px 25px;
+	color: grey;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	font-size: 30px;
+	line-height: inherit;
+	background-color: lightblue;
+}
+
+#confirmAjout{
+	background-color: lightblue;
+	border: solid 2px #021a40;
+	border-radius: 25px;
+	width: 150px;
+	font-size: 25px;
+	color: #021a40;
+	margin: 20px;
+}
+
+#confirmAjout:hover{
+	background-color: green;
+	cursor: pointer;
+}
+
+#urgent{
+	background-color: orange;
+}
+
+#normal{
+	background-color: lightblue;
+}
+
+#purgent{
+	background-color: greenyellow;
+}
+
+#closeExplainButton{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: red;
+	border-radius: 10px;
+}
+
+#info{
+	color: white;
+	font-size: 36px;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caution{
+	background-color: orange;
+	cursor: pointer;
+}
+
+.controle{
+	background-color: green;
+	cursor: pointer;
+}
+
+.acceuil{
+	background-color: red;
+	cursor: pointer;
+}
+
+.cautions{
+	color: orange;
+}
+
+.controles{
+	color: green;
+}
+
+.acceuils{
+	color: red;
+}
+
+#namePerson{
+	padding: 20px;
+	color: lightblue;
+}
+
+#commentBox{
+	position: absolute;
+	width: 750px;
+	background-color: #021a40;
+	left: -1px;
+	top: -1px;
+	opacity: 0.9;
+	color: white;
+	font-size: 24px;
+	border-radius: 25px;
+	padding-bottom: 30px;
+}
+
+#OwnBuildingTable{
+	margin: 15px;
+}
+
+#OwnBuildingTable tr th{
+	border: 1px white solid;
+	padding: 4px;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.action{
+	background-color: grey;
+}
+
+#numbersTable .action{
+	border: 1px white solid;
+	padding: 4px;
+}
+
+#numbersTable .reloueyes{
+	border: 1px white solid;
+	padding: 4px;
+	background-color: green;
+}
+#numbersTable .relouenon{
+	border: 1px white solid;
+	padding: 4px;
+	background-color: red;
+}
+
+#numbersTable .number{
+	border: 1px white solid;
+	padding: 4px;
+}
+
+#commentBox table, th, td {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+#formCaution{
+	margin-left: 20px;
+	font-size: 30px;
+}
+input[type='checkbox']{
+	width: 25px;
+	height: 25px;
+}
+input[type="text"]{
+	width: 75%;
+	height: 200px;
+	font-size: 42px;
+}
+#interimsearcher{
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 50%;
+	height: 50px;
+	font-size: 42px;
+}
+input[type="file"]{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+}
+#confirmCaution{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#confirmsearchinterim{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 35%;
+	height: 55px;
+	font-size: 42px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#confirmAcceuil{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#confirmControle{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#Interim1{
+	background-color: green;
+}
+
+#Interim0{
+	background-color: rgb(235, 60, 60);
+}
+
+#skipControle{
+	width: 35%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 150px;
+}
+
+#skipNettoyage{
+	width: 35%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 150px;
+}
+
+#confirmBuilding{
+	width: 75%;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+#formAcceuil{
+	margin-left: 20px;
+	font-size: 45px;
+}
+
+#formControle{
+	margin-left: 20px;
+	font-size: 45px;
+}
+
+#clickableButtons{
+	width: 50%;
+	float: right;
+	margin-top: 200px;
+}
+
+#ownBuilding{
+	position: absolute;
+	left: 1px;
+	bottom: 1px;
+	background-color: #021a40;
+	opacity: 0.9;
+	color: white;
+	font-size: 24px;
+	border-radius: 10px;
+	padding-right: 25px;
+}
+
+button{
+	background-color: lightblue;
+	border-radius: 25px;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+
+.buttonToClick{
+	width: 70%;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: lightblue;
+	border-radius: 25px;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+}
+
+.attributedTDGeneral{
+	background-color: black;
+	cursor: pointer;
+}
+
+.openTDGeneral{
+	background-color: greenyellow;
+	cursor: pointer;
+}
+
+.containerGardes{
+	border: 1px solid grey;
+	border-radius: 25px;
+	margin: 15px;
+	width: 40%;
+	text-align: left;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.tableGardes tr th{
+	border: 1px solid grey;
+	padding: 5px;
+	margin: 5px;
+	font-size: 27px;
+	font-weight: normal;
+}
+
+.titleJourn{
+	font-size: 42px;
+	border-bottom: 1px solid lightgrey;
+	margin: 30px;
+}
+
+.tachesJournaliere{
+	border: 1px dotted grey;
+	width: 55%;
+	padding: 10px;
+	margin: auto;
+	border-radius: 25px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.depannagesBoxDone{
+	border: 2px dotted green;
+	position: relative;
+	width: 60%;
+	margin: 15px auto;
+	border-radius: 25px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.depannagesBoxSkip{
+	border: 2px dotted red;
+	position: relative;
+	width: 60%;
+	margin: 15px auto;
+	border-radius: 25px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.depannagesBoxNot{
+	border: 2px dotted orange;
+	position: relative;
+	width: 60%;
+	margin: 15px auto;
+	border-radius: 25px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.depNrBunaglow{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.depDate{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.depDescription{
+	margin: auto;
+	margin-top: 75px;
+}
+
+.depDone{
+	background-color: green;
+	width: 200px;
+	height: 40px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.depSkip{
+	background-color: red;
+	width: 200px;
+	height: 40px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.depNotDone{
+	background-color: orange;
+	width: 200px;
+	height: 40px;
+	margin: 40px auto auto;
+}
+
+.remarqueInText{
+	font-size: 24px;
+}
+
+#extraWhiteBoardHourBlocks{
+	height: 70vh;
+	width: 90vw;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#extraWhiteBoardHourBlocks h3{
+	width: 10%;
+	border: 1px grey dashed;
+	height: 6.65%;
+	margin: 0;
+}
+
+.hourblock{
+	height: 6.65%;
+	width: 85%;
+	border: 1px grey dashed;
+	text-align: left;
+}
+
+.blockTacheJourn{
+	width: 50%;
+	background-color: red;
+	margin: auto;
+}
+
+.blockDepanage{
+	width: 50%;
+	background-color: green;
+	margin: auto;
+}
+
+#nameInput{
+	font-size: 14px;
+}

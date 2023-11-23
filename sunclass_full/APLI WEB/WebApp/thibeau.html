@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Section Reception</title>
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+            integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/thibeau.css" type="text/css">
+
+</head>
+<body>
+    <div id="circularMenu" class="circular-menu">
+
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <i class="fa fa-plus"></i>
+        </a>
+
+        <menu class="items-wrapper">
+            <a href="#" id="tacheJourn" class="menu-item"><i class="fas fa-calendar-day"></i></a>
+            <a href="#" id="depGarde" class="menu-item"><i class="fas fa-moon"></i></a>
+            <a href="#" id="depJour" class="menu-item"><i class="fas fa-sun"></i></a>
+            <a href="#" id="viewHK" class="menu-item"><i class="fas fa-broom"></i></a>
+        </menu>
+
+    </div>
+
+    <div class="navbar">
+        <a id="buttonCaution" href="#"><i class="fas fa-euro-sign"></i></a>
+        <a id="buttonTD" href="#"><i class="fas fa-toolbox"></i></a>
+        <a id="agenda" href="#"><i class="fas fa-calendar-check"></i></a>
+        <a id="buttonPlan" href="#"><i class="fas fa-broom"></i></a>
+        <a id="utilTemps" href="#"><i class="fas fa-stopwatch"></i></a>
+    </div>
+
+    <div class="pie pie1" onclick="document.body.classList.remove('active')" id="personel">
+        <div class="pie-color pie-color1">
+            <svg class="worker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="100" height="100">
+                <path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="pie pie2" onclick="document.body.classList.remove('active')" id="taches">
+        <div class="pie-color pie-color2">
+            <svg class="discount" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="100" height="100">
+                <path d="M16.557,4.467h-1.64v-0.82c0-0.225-0.183-0.41-0.409-0.41c-0.226,0-0.41,0.185-0.41,0.41v0.82H5.901v-0.82c0-0.225-0.185-0.41-0.41-0.41c-0.226,0-0.41,0.185-0.41,0.41v0.82H3.442c-0.904,0-1.64,0.735-1.64,1.639v9.017c0,0.904,0.736,1.64,1.64,1.64h13.114c0.904,0,1.64-0.735,1.64-1.64V6.106C18.196,5.203,17.461,4.467,16.557,4.467 M17.377,15.123c0,0.453-0.366,0.819-0.82,0.819H3.442c-0.453,0-0.82-0.366-0.82-0.819V8.976h14.754V15.123z M17.377,8.156H2.623V6.106c0-0.453,0.367-0.82,0.82-0.82h1.639v1.23c0,0.225,0.184,0.41,0.41,0.41c0.225,0,0.41-0.185,0.41-0.41v-1.23h8.196v1.23c0,0.225,0.185,0.41,0.41,0.41c0.227,0,0.409-0.185,0.409-0.41v-1.23h1.64c0.454,0,0.82,0.367,0.82,0.82V8.156z"></path>            </svg>
+        </div>
+    </div>
+    <div class="pie pie3" onclick="document.body.classList.remove('active')" id="login_logs">
+        <div class="pie-color pie-color3">
+            <svg class="cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="100" height="100">
+                <path d="M6.506,6.98c-0.469,0-0.85,0.381-0.85,0.85s0.381,0.85,0.85,0.85s0.85-0.381,0.85-0.85S6.975,6.98,6.506,6.98z
+								 M18.684,4.148h-3.398V0.75H5.656v3.398H1.691c-0.313,0-0.566,0.253-0.566,0.566V14.91c0,0.312,0.253,0.566,0.566,0.566h3.965
+								v3.398h9.629v-3.398h3.398c0.313,0,0.566-0.254,0.566-0.566V4.714C19.25,4.401,18.997,4.148,18.684,4.148z M6.789,1.882h7.363
+								v2.266H6.789V1.882z M14.152,17.742H6.789v-5.664h7.363V17.742z M18.117,13.777c0,0.312-0.254,0.566-0.566,0.566h-2.266v-3.399
+								H5.656v3.399H2.824c-0.313,0-0.566-0.254-0.566-0.566v-7.93c0-0.313,0.253-0.566,0.566-0.566h14.727
+								c0.312,0,0.566,0.253,0.566,0.566V13.777z M3.674,6.98c-0.469,0-0.85,0.381-0.85,0.85s0.381,0.85,0.85,0.85s0.85-0.381,0.85-0.85
+								S4.143,6.98,3.674,6.98z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="menuRoll" onclick="document.body.classList.toggle('active')">
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 20 20">
+            <path d="M17.592,8.936l-6.531-6.534c-0.593-0.631-0.751-0.245-0.751,0.056l0.002,2.999L5.427,9.075H2.491c-0.839,0-0.162,0.901-0.311,0.752l3.683,3.678l-3.081,3.108c-0.17,0.171-0.17,0.449,0,0.62c0.169,0.17,0.448,0.17,0.618,0l3.098-3.093l3.675,3.685c-0.099-0.099,0.773,0.474,0.773-0.296v-2.965l3.601-4.872l2.734-0.005C17.73,9.688,18.326,9.669,17.592,8.936 M3.534,9.904h1.906l4.659,4.66v1.906L3.534,9.904z M10.522,13.717L6.287,9.48l4.325-3.124l3.088,3.124L10.522,13.717z M14.335,8.845l-3.177-3.177V3.762l5.083,5.083H14.335z"></path>
+        </svg>
+    </div>
+
+
+    <div id="whiteboard">
+    </div>
+    <script defer src="jsPages/thibeau.js" type="text/javascript"></script>
+</body>
+</html>
